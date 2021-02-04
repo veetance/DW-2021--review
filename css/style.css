@@ -31,10 +31,10 @@ a {
     font-size: 1.4rem;
 }
 .logo{
-	background-image: url(../imgs/smile.png);
+	/*background-image: url(../imgs/smile.png);*/
 	width:100px;
 	height:100px;
-	background-size:100%;
+	/*background-size:100%;*/
 }
 
 .veewrap{
@@ -128,6 +128,12 @@ cursor: url(../imgs/pointtt.png), auto;
 
 }
 
+
+.logo img:not(:first-child){ /*sellect all but not fiirst*/
+	display: none;
+
+
+}
 
 
 footer > div{
