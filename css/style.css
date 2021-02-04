@@ -7,6 +7,7 @@ min-height: 100vh;
 margin: 0 ;
 font-family: 'Rubik', sans-serif;
 font-size: 100%;
+
 }
 img{
 max-width: 100%;
@@ -16,16 +17,23 @@ p{
 margin-bottom: 0px;
 margin-top: 0px;
 font-size: 1rem;
+font-weight: 200;
 }
 h3{
+color: #09015A;
 margin-bottom: 0.1em;
 margin-top: 0.1em;
+}
 
+a {
+    text-decoration: none;
+    color: #4A63C9;
+    font-size: 1.4rem;
 }
 .logo{
 	background-image: url(../imgs/smile.png);
-	width:80px;
-	height:80px;
+	width:100px;
+	height:100px;
 	background-size:100%;
 }
 
@@ -35,31 +43,45 @@ margin-top: 0.1em;
 	align-items: center;
 	justify-content: center;
 
-background:#eee;
-  border: 3px black dashed;
+/*background:#eee;*/
   width: 100%;
-  height:5em;
+  height: 5em;
+  background-color: #F1E292;
+  background-size:10%;
+  
+  border:none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  
+
 
 }
 .futlogo{
- content:url(../imgs/VEE.png);	
+ content:url(../imgs/bee.png);	
 
-	/*background-image: url(../imgs/VEE.png);*/
+/*	background-image: url(../imgs/VEE.png);*/
 	width:3em;
 	height:3em;
+	background-repeat: repeat-x;
 	
-	background-size:50px%;
+	background-size:100%;
 }
 
 
 header{
-border-bottom: 2px solid #92813C;
+
+/*max-width: 1140px;*/
+text-align: center;
+
 background-color: #F1E292;
-padding:20px;
+padding:1em 2em;
 
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+
+color: #92813C;
 
 }
 
@@ -71,17 +93,39 @@ nav ul {
 	grid-gap: 30px;
 }
 
+nav ul li a {
+color: #09015A;
 
-body{
+}
+
+
+body{		
 display: flex; /*row by default*/
 flex-direction: column;/* changes parent to column*/
 }
 
 main{
-flex-grow: 1;
-display:flex;
-justify-content: center; /* x axis */
-align-items: center; /* y axis */
+
+	border: 2px solid;
+	border-radius: 15px;
+	border-color: #92813C;
+	font-weight: 300px;
+	font-size: 4em;
+	
+    flex-grow: 1;
+    display:flex;
+    justify-content: center; /* x axis */
+    align-items: center; /* y axis */
+
+margin:32px;
+
+
+}
+.joke{
+	padding:0.5em;
+  color: #92813C;
+cursor: url(../imgs/pointtt.png), auto;
+
 }
 
 
@@ -96,9 +140,9 @@ footer > div{
 
 
 footer {
-padding-left: 0.9em;
-padding-right: 0.9em;
-padding-bottom: 0.9em;
+padding-left: 2em;
+padding-right: 2em;
+padding-bottom: 2em;
 
 display:grid;
 grid-template-columns: 1fr;
@@ -131,31 +175,31 @@ align-items:center;
 }
 .credits{
 display: grid;
-
-
 align-items: center;
 
 background:#eee;
-border: 3px black dashed;
+/*border: 3px black dashed;*/
 width: 100%;
 height: 100%;
-padding-left: 20px;
-	padding-right:  20px;
+padding: 20px;
+ 
+ border-bottom-left-radius: 15px;
+ border-bottom-right-radius: 15px;
 }
 
 .student{
 display: grid;
-
-
 align-items: center;
 
-	
 background:#eee;
- border: 3px black dashed;
+/* border: 3px black dashed;*/
  width: 100%;
  height: 100%;
- padding-left: 20px;
-	padding-right:  20px;
+ padding: 20px;
+
+
+ border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 
 }
 
@@ -175,7 +219,26 @@ grid-gap: 20px;
 
 
 
+@media screen and (min-width:1380px){
 
+main{
+margin-left: 200px;
+margin-right: 200px;
+}
+
+header{
+padding-left: 200px;
+padding-right: 200px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	grid-gap: 4em;
+}
+}
 
 
 
