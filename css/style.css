@@ -1,17 +1,27 @@
 *{
 	box-sizing: border-box;
+
 }
 body, html {
 min-height: 100vh;
 margin: 0 ;
 font-family: 'Rubik', sans-serif;
+font-size: 100%;
 }
 img{
 max-width: 100%;
 }
 /* -- alwways have latter code on css-->*/
+p{
+margin-bottom: 0px;
+margin-top: 0px;
+font-size: 1rem;
+}
+h3{
+margin-bottom: 0.1em;
+margin-top: 0.1em;
 
-
+}
 .logo{
 	background-image: url(../imgs/smile.png);
 	width:80px;
@@ -20,8 +30,9 @@ max-width: 100%;
 }
 
 .veewrap{
-	align-items: center;
+	
 	display: flex;
+	align-items: center;
 	justify-content: center;
 
 background:#eee;
@@ -85,13 +96,14 @@ footer > div{
 
 
 footer {
-padding-left: 0.5em;
-padding-right: 0.5em;
-padding-bottom: 0.5em;
+padding-left: 0.9em;
+padding-right: 0.9em;
+padding-bottom: 0.9em;
+
 display:grid;
 grid-template-columns: 1fr;
-grid-gap: 2.5em;
-grid-row: 10px;
+grid-gap: 30px;
+
 ;
 
 
@@ -102,13 +114,14 @@ justify-items: center;
 
 .nested{
 
+
 box-sizing: border-box;
 margin-bottom: 1px;
 
 display: grid;
 grid-template-columns: 0.8fr 0.8fr;
-column-gap: 2em;
-grid-auto-rows:100px;
+grid-gap: 30px;
+grid-auto-rows :100px;
 width: 100%;
 
 justify-content: center;
@@ -117,16 +130,32 @@ align-items:center;
 
 }
 .credits{
-	background:#eee;
-  border: 3px black dashed;
-  width: 100%;
+display: grid;
 
+
+align-items: center;
+
+background:#eee;
+border: 3px black dashed;
+width: 100%;
+height: 100%;
+padding-left: 20px;
+	padding-right:  20px;
 }
 
 .student{
-	background:#eee;
-  border: 3px black dashed;
-  width: 100%;
+display: grid;
+
+
+align-items: center;
+
+	
+background:#eee;
+ border: 3px black dashed;
+ width: 100%;
+ height: 100%;
+ padding-left: 20px;
+	padding-right:  20px;
 
 }
 
